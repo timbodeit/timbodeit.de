@@ -1,0 +1,24 @@
+<header role="banner" id="navbar">
+  <div id="navbarinnerdiv">
+    <a href="/{{ site.baseurl }}/">
+      <img src="/{{ site.baseurl }}/assets/logo.svg" id="logo" alt="Tim Bodeit.">
+    </a>
+    <a onClick="togglemobilemenu()"><img src="/{{ site.baseurl }}/assets/mobilemenu.svg" id="mobilemenubutton" alt="open menu"></a>
+    <div id="desktopnav">
+      {% for p in site.pages %}
+        {% if p.title %}
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/{{ p.url | prepend: site.baseurl }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</header>
+<div id="mobilenav">
+  {% for p in site.pages %}
+    {% if p.title %}
+    <a href="/{{ p.url | prepend: site.baseurl }}" {% if p.url == page.url %}class="active"{% endif %}><div>{{ p.title }}</div></a>
+    {% endif %}
+  {% endfor %}
+</div>
+

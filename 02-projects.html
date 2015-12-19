@@ -1,0 +1,41 @@
+---
+layout: page
+title: projects
+permalink: /projects/
+---
+<div id="welcomeprojects">
+  Welcome to my projects <span class="green">.</span>
+</div>
+<div id="projects">
+  {% for post in site.categories.projects %}
+  <div class="{% cycle 'projectright', 'projectleft' %}">
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
+<div id="welcomeprojects" style="border-top:1px solid #c8c6c6;">
+  Open Soure contributions
+</div>
+<div id="opensource" style="column-count: 2; margin: 35px 10% 20px 10%; column-gap: 30px;">
+  {% assign posts = site.categories.opensource | sort:"commitcount" | reverse %}
+  {% for post in posts %}
+    <div style="height: 100px;">
+      <a href="https://github.com/{{ post.github }}" target="_blank">
+        {{ post.github }}
+      </a>
+      &nbsp;
+      <span style="color: #c8c6c6;">{{ post.language }}</span>
+      <p style="margin-top: 0; color: #444; font-weight: 300; margin-bottom: 0.5em;">
+        {{ post.content }}
+      </p>
+      <p style="margin-top: 0.5em">
+      {% if post.mystatus != null %}
+      {{ post.mystatus }} / 
+      {% endif %}
+      {{ post.commitcount }} commits /
+      {{ post.additions }} ++ /
+      {{ post.deletions }} --
+      </p>
+    </div>
+  {% endfor %}
+</div>

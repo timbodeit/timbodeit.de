@@ -1,0 +1,792 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#contactform input.inputfield {
+  max-width: 588px;
+  height: 73px;
+  display:block;
+  margin: 32px auto;
+  width: 90%;
+  background-color: #e7e7e7;
+  border: 1px solid #c5c2c2;
+  border-radius: 4px;
+  font-weight:500;
+  font-size:20px;
+  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #444;
+  padding: 0 23px;
+}
+
+#contactform textarea {
+  max-width: 588px;
+  height: 273px;
+  display:block;
+  margin: 32px auto;
+  width: 90%;
+  background-color: #e7e7e7;
+  border: 1px solid #c5c2c2;
+  border-radius: 4px;
+  font-weight:500;
+  font-size:20px;
+  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #444;
+  padding: 23px 23px;
+}
+
+#contactform input.submitbutton {
+  background-image: url("/{{ site.baseurl }}/assets/getaquotebutton@2x.png"); /* SHOULD NOT BE @2x!!!*/
+
+  background-size: 263px 62px;
+  width: 263px;
+  height: 62px;
+  margin: 28px auto 6px auto;
+  border: 0;
+  background-color: transparent;
+}
+
+#contactheader {
+  font-size: 27px;
+  color: #444;
+  letter-spacing: -2.02px;
+  margin: 65px;
+  font-weight:500;
+  text-align:center;
+}
+
+#mapcontact {
+  width: 100%;
+  height: 281px;
+  position: relative;
+  border-bottom: 1px solid #c8c6c6;
+}
+#mapcontact img {
+  height:281px;
+  left:50%;
+  position:absolute;
+  margin-left: -140.5px;
+}
+
+#contactleftcol table {
+  line-height: normal;
+}
+
+#contactleftcol table a {
+  color: #444;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+}
+
+#navbar {
+  border-bottom: #c5c2c2 1px solid;
+  width: 100%;
+  position: static;
+  top: 0px;
+  left: 0px;
+  background-color:#fff;
+}
+
+#navbarinnerdiv {
+  height: 100%;
+  max-width:1024px;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #8CBF49;
+  font-weight:500;
+}
+
+div#bigpicture {
+    height: 461px;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #c5c2c2;
+  }
+  img#bigpictureimg {
+    height:461px;
+    width: auto;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+  }
+.green {
+  color: #8cbf49;
+}
+
+.desctext div.appdescription h1 /*, .desctextright div.appdescription h1  */
+{
+          /* SAME AS FOR DESCTEXTRIGHT*/
+
+    color: #444;
+    font-size: 27px;
+    letter-spacing:-2.02px;
+    font-weight: 500;
+    margin: 9px 0;
+  }
+
+  .desctext div.appdescription a.block /*, .desctextright div.appdescription a.block */
+  {
+          /* SAME AS FOR DESCTEXTRIGHT*/
+
+    display: block;
+    font-size:17px;
+    font-weight: 500;
+  }
+
+  .desctext div.appdescription p /*, .desctextright div.appdescription p */
+  {
+          /* SAME AS FOR DESCTEXTRIGHT*/
+
+    margin: 18px 0;
+    font-size: 17px;
+    font-weight: 300;
+    color: #444;
+  }
+
+  .project {
+    overflow: hidden;
+  }
+
+@media screen and (max-width: 700px){
+
+  .projectright img.simpleImage {
+    display: none;
+  }
+
+  #contactheaderdiv {
+    border-bottom: 1px solid #c8c6c6;
+    padding-bottom: 45px;
+
+  }
+  /*Mobile*/
+
+  #contacttwocols {
+    display: none;
+  }
+
+  #contactform {
+    margin: 41px 87px 41px 41px;
+  }
+
+  #contactform input.inputfield {
+    width:100%;
+    max-width:inherit;
+    margin: 15px 0px;
+  }
+
+  #contactform textarea {
+    width:100%;
+    max-width:inherit;
+    margin: 15px 0px;
+  }
+
+
+  img.emailicon{
+    width:33px;
+    height: 27px;
+    margin: 18px 28px 18px 0;
+  }
+  img.phoneicon {
+    width:24px;
+    height: 33px;
+    margin: 18px 28px 18px 0px;
+  }
+  #mobileemail, #mobilephonenumber {
+    color: #444;
+    font-size: 27px;
+  }
+  #mobilecallbutton, #mobileemailbutton {
+    margin: 0 auto;
+  }
+
+#contactheader {
+  margin: 50px 30px;
+}
+
+  #navbar {
+    height: 104px;
+  }
+  #logo {
+    position: absolute;
+    left:28px;
+    top: 37px;
+    width:184px;
+    height:auto;
+  }
+  #desktopnav {
+    display:none;
+  }
+
+  #quote {
+    display: none;
+  }
+
+  #welcomeheader {
+    font-size:40px;
+    color:#444;
+    letter-spacing:-3.06px;
+    text-align: center;
+    margin: 40px 67px 69px 67px;
+    font-weight:normal;
+  }
+  #welcomeprojects {
+    height:27px;
+    border-bottom: 1px solid #c8c6c6;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: -2.02px;
+    color: #444;
+    padding: 36px 0;
+    font-weight: 500;
+  }
+  #twocols {
+    width: 100%;
+    position: relative;
+    margin: 43px 0;
+    border: 0;
+    border-spacing:0;
+  }
+  #leftcol {
+    display:block;
+    left: 0;
+    margin: 0 32px 43px 32px;
+    line-height: 34px;
+    color: #444;
+    font-size: 27px;
+    text-align:center;
+    vertical-align: top;
+
+  }
+  #rightcol {
+    display:block;
+    right: 0;
+    margin: 43px 32px 0 32px;
+    line-height: 34px;
+    color: #444;
+    font-size: 27px;
+    text-align:center;
+    vertical-align: top;
+
+  }
+  .appbigiphoneimage, .appsmalliphoneimage {
+    display:none;
+  }
+  div.project {
+    width:100%;
+    border-top: 1px solid #c8c6c6;
+    position: relative;
+    margin-top: -1px;
+    text-align: center;
+    overflow: hidden;
+  }
+  div.worktype {
+    color: #444;
+    border: 1px solid #c8c6c6;
+    margin: -1px auto 0 auto;
+    width: 168px;
+    height: 58px;
+    font-size: 17px;
+    font-weight:500;
+    line-height: 58px;
+  }
+  .desctext div.appdescription h1 {
+    margin-top: 35px;
+    margin-bottom: 0;
+  }
+  .desctext div.appdescription p {
+    padding: 0 50px;
+  }
+  a.appstorebutton {
+    display: block;
+    margin-top: 40px;
+  }
+  img.mobileappimages {
+        max-width: 90%;
+        margin: 40px 0;
+  }
+  div#mobilenav {
+        overflow:hidden;
+    height:0;
+  }
+  div#mobilenav div {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #c5c2c2;
+    display:block;
+    width: 100%;
+    background-color:#f3f3f3;
+    height: 98px;
+    font-weight:500;
+    font-size:27px;
+    letter-spacing:-2.02px;
+    color: #444;
+    box-shadow: 0px 1px 1px #fff;
+    line-height:98px;
+    text-align:center;
+
+    text-shadow: 0px 1px 1px rgb(255, 255, 255);
+
+  }
+  a.active div {
+    color: #8cbf49 !important;
+  }
+  #mobilemenubutton {
+    top: 33px;
+    right: 36px;
+    position: absolute;
+  }
+}
+@media screen and (min-width: 700px) and (devicePixelRatio: 2) {
+  #contactform input.submitbutton {
+        background-image: url("/{{ site.baseurl }}/assets/getaquotebutton@2x.png");
+
+  }
+}
+@media screen and (min-width: 700px) {
+
+  .projectright img.simpleImage {
+    position: absolute;
+    margin: 90px;
+    top: 50%;
+    margin-top: -75px;
+    width: 260px;
+    right: 0;
+  }
+
+  img.emailicon {
+    width:33px;
+    height: 27px;
+    margin: 20px 29px 20px 0;
+  }
+  img.phoneicon {
+    width:24px;
+    height: 33px;
+    margin: 23px 34px 23px 4px;
+  }
+
+  #contacttwocols {
+    max-width: 90%;
+    width: 636px;
+    position: relative;
+    margin: 57px auto 54px auto;
+    border: 0;
+    border-spacing:0;
+    font-weight: 500;
+  }
+  #contactleftcol {
+    left: 0;
+    border-right: 1px solid #c5c2c2;
+    padding: 36px 32px 26px 0px;
+    line-height: 34px;
+    color: #444;
+    font-size: 17px;
+    width: 50%;
+  }
+  #contactrightcol {
+    text-align:right;
+    right: 0;
+    padding: 36px 0px 26px 32px;
+    line-height: 34px;
+    color: #444;
+    font-size: 17px;
+    width: 50%;
+  }
+
+
+
+
+  #mobilemenubutton {
+    display: none;
+  }
+  #mobilenav {
+    display: none;
+  }
+  /*Desktop*/
+
+  #mobileemailbutton {
+    display: none;
+  }
+
+  #mobilecallbutton {
+    display: none;
+  }
+
+  body {
+  background: url("/{{ site.baseurl }}/assets/background.png");
+  }
+
+  #navbar {
+      height: 174px;
+  }
+  #logo {
+    position: absolute;
+    left:0;
+    top: 75px;
+    width:184px;
+    height:auto;
+        margin-left: 30px;
+
+  }
+  #desktopnav {
+    right:0;
+    position:absolute;
+    top:79px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-decoration:none;
+    font-size: 23px;
+    letter-spacing:-1.72px;
+    font-weight: bold;
+        margin-right: 30px;
+
+  }
+  #desktopnav a {
+        color: #444;
+  }
+  #desktopnav a:active, #desktopnav a:hover, #desktopnav a.active {
+    color: #8CBF49;
+  }
+  #body {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color:#fff;
+    border: 1px solid #c5c2c2;
+    min-height: 500px;
+    border-top:none;
+  }
+
+  #quote {
+    z-index:2;
+    position: absolute;
+    right: 90px;
+    left: 360px;
+    top: 108px;
+    font-weight: 300;
+    font-size: 47px;
+    color: #444;
+  }
+
+  #welcomeheader {
+    font-size:27px;
+    color:#444;
+    letter-spacing:-2.02px;
+    text-align: center;
+    margin: 71px 65px 0 65px;
+    font-weight:500;
+  }
+  #twocols {
+    width: 100%;
+    position: relative;
+    margin: 57px 0 54px 0;
+    border: 0;
+    border-spacing:0;
+  }
+  #leftcol {
+    left: 0;
+    border-right: 1px solid #c5c2c2;
+    padding: 36px 32px 26px 43px;
+    line-height: 34px;
+    color: #444;
+    font-size: 17px;
+    width: 50%;
+  }
+  #rightcol {
+    right: 0;
+    padding: 36px 43px 26px 32px;
+    line-height: 34px;
+    color: #444;
+    font-size: 17px;
+    width: 50%;
+  }
+
+  #welcomeprojects {
+    height:27px;
+    border-bottom: 1px solid #c8c6c6;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: -2.02px;
+    color: #444;
+    padding: 75px 0;
+    font-weight: 500;
+  }
+  .projectleft, .projectright {
+    width:100%;
+    height: 610px;
+    border-top: 1px solid #c8c6c6;
+    position: relative;
+    margin-top: -1px;
+  }
+
+  .projectleft .appimages {
+    width:421px;
+    height:463px;
+    left: 45px;
+    top:75px;
+    position:absolute;
+  }
+  .projectleft .desctext {
+    left: 396px;
+    right: 0;
+    position: absolute;
+    height: 570px;
+    top:0;
+    text-align: center;
+    vertical-align: middle;
+      line-height: 570px;
+  }
+
+  .projectleft .desctext div.appdescription {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+    padding: 74px;
+  }
+  .projectleft .desctext div.appdescription h1 {
+    color: #444;
+    font-size: 27px;
+    letter-spacing:-2.02px;
+    font-weight: 500;
+    margin: 9px 0;
+  }
+  .projectleft .desctext div.appdescription a.block {
+    display: block;
+    font-size:17px;
+    font-weight: 500;
+  }
+  .projectleft .desctext div.appdescription p {
+    margin: 18px 0;
+    font-size: 17px;
+    font-weight: 300;
+    color: #444;
+  }
+
+  .projectleft .desctext div.worktype {
+    color: #444;
+    border: 1px solid #c8c6c6;
+    top: -1px;
+    position: absolute;
+    margin-left: -84px;
+    width: 168px;
+    height: 58px;
+    left: 50%;
+    font-size: 17px;
+    font-weight:500;
+    line-height: 58px;
+  }
+
+  .projectleft .desctext img.appstorebutton {
+    position: absolute;
+    margin-left: -119px;
+    width: 238px;
+    height: 66px;
+    left: 50%;
+    bottom: 37px;
+  }
+
+  .projectleft img.appbigiphoneimage {
+    right:68px;
+    top: 0;
+    position:absolute;
+    height:449px;
+    width:213px;
+  }
+  .projectleft img.appsmalliphoneimage {
+    width: 171px;
+    height: 361px;
+    right:0;
+    top:0;
+    position:absolute;
+  }
+  .projectleft img.appiconimage {
+    width: 140px;
+    height: 143px;
+    right:0;
+    bottom:0;
+    position:absolute;
+  }
+  .projectleft div.appbigiphoneimage {
+    z-index:2;
+    left: 0;
+    width: 184px;
+    top: 74px;
+    position:absolute;
+    padding-right:281px;
+    height:463px;
+
+  }
+  .projectleft div.appsmalliphoneimage {
+    z-index:1;
+    left:0;
+    width:44px;
+    top:124px;
+    position:absolute;
+    padding-right:171px;
+    height:362px;
+  }
+  .projectright .appimages {
+    width:421px;
+    height:463px;
+    right: 45px;
+    top:75px;
+    position:absolute;
+  }
+  .projectright .desctext {
+    right: 396px;
+    left: 0;
+    position: absolute;
+    height: 570px;
+    top:0;
+    text-align: center;
+    vertical-align: middle;
+      line-height: 570px;
+  }
+
+  .projectright .desctext div.appdescription {
+      /* SAME AS FOR DESCTEXTRIGHT*/
+    display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+    padding: 74px;
+  }
+
+
+  .projectright .desctext div.appdescription p {
+          /* SAME AS FOR DESCTEXTRIGHT*/
+
+    margin: 18px 0;
+    font-size: 17px;
+    font-weight: 300;
+    color: #444;
+  }
+
+  .projectright .desctext div.worktype {
+          /* SAME AS FOR DESCTEXTRIGHT*/
+
+    color: #444;
+    border: 1px solid #c8c6c6;
+    top: -1px;
+    position: absolute;
+    margin-left: -84px;
+    width: 168px;
+    height: 58px;
+    left: 50%;
+    font-size: 17px;
+    font-weight:500;
+    line-height: 58px;
+  }
+
+  .projectright .desctext img.appstorebutton {
+          /* SAME AS FOR DESCTEXTRIGHT*/
+
+    position: absolute;
+    margin-left: -119px;
+    width: 238px;
+    height: 66px;
+    left: 50%;
+    bottom: 37px;
+  }
+
+  .projectright img.appbigiphoneimage {
+    left:68px;
+    top: 0;
+    position:absolute;
+    height:449px;
+    width:213px;
+  }
+  .projectright img.appsmalliphoneimage {
+    width: 171px;
+    height: 361px;
+    left:0;
+    top:0;
+    position:absolute;
+  }
+  .projectright img.appiconimage {
+    width: 140px;
+    height: 143px;
+    left:0;
+    bottom:0;
+    position:absolute;
+  }
+  .projectright div.appbigiphoneimage {
+
+    z-index:2;
+    right: 0;
+    width: 184px;
+    top: 74px;
+    position:absolute;
+    padding-left:281px;
+    height:463px;
+
+  }
+  .projectright div.appsmalliphoneimage {
+    z-index:1;
+    right:0;
+    width:44px;
+    top:124px;
+    position:absolute;
+    padding-left:171px;
+    height:362px;
+  }
+  .mobileappimages {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .projectright img.simpleImage {
+    position: absolute;
+    margin: 50px;
+    top: 50%;
+    margin-top: -75px;
+    width: 225px;
+    right: 0;
+  }
+
+  .projectleft div.appsmalliphoneimage {
+    display:none;
+  }
+  .projectleft div.appbigiphoneimage {
+    width: 44px !important;
+  }
+  .projectleft div.desctext {
+    left: 276px !important;
+  }
+  .projectright div.appsmalliphoneimage {
+    display:none;
+  }
+  .projectright div.appbigiphoneimage {
+    width: 44px !important;
+  }
+  .projectright div.desctext {
+    right: 276px !important;
+  }
+}
+
+#logo {
+
+}
+div#imprintlink {
+  margin: 0px auto;
+  padding: 10px;
+  max-width: 1024px;
+  text-align: center;
+  color: #aaa;
+}
+div#imprintlink a {
+  color: #aaa;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+div#imprintlink a:hover {
+  text-decoration: underline;
+}
