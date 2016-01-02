@@ -34,8 +34,7 @@
 }
 
 #contactform input.submitbutton {
-  background-image: url("/{{ site.baseurl }}/assets/getaquotebutton@2x.png"); /* SHOULD NOT BE @2x!!!*/
-
+  background-image: url($base-url+'/assets/getaquotebutton@2x.png'); /* SHOULD NOT BE @2x!!!*/
   background-size: 263px 62px;
   width: 263px;
   height: 62px;
@@ -349,7 +348,7 @@ div#bigpicture {
 }
 @media screen and (min-width: 700px) and (devicePixelRatio: 2) {
   #contactform input.submitbutton {
-        background-image: url("/{{ site.baseurl }}/assets/getaquotebutton@2x.png");
+        background-image: url($base-url+"/assets/getaquotebutton@2x.png");
 
   }
 }
@@ -423,7 +422,7 @@ div#bigpicture {
   }
 
   body {
-  background: url("/{{ site.baseurl }}/assets/background.png");
+  background: url($base-url+"/assets/background.png");
   }
 
   #navbar {

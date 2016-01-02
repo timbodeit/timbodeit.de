@@ -13,11 +13,11 @@ if (screen.width < 700) {
   mvp.setAttribute('content','width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=0');
 }
 function togglemobilemenu() {
-  if (document.getElementById('mobilemenubutton').getAttribute('src')!='/{{ site.baseurl }}/assets/mobilemenu_active.svg') {
-    document.getElementById('mobilemenubutton').setAttribute('src','/{{ site.baseurl }}/assets/mobilemenu_active.svg');
+  if (document.getElementById('mobilemenubutton').getAttribute('src')!='{{ site.baseurl }}/assets/mobilemenu_active.svg') {
+    document.getElementById('mobilemenubutton').setAttribute('src','{{ site.baseurl }}/assets/mobilemenu_active.svg');
     document.getElementById('mobilenav').setAttribute('style','height: auto !important');
   } else {
-    document.getElementById('mobilemenubutton').setAttribute('src','/{{ site.baseurl }}/assets/mobilemenu.svg');
+    document.getElementById('mobilemenubutton').setAttribute('src','{{ site.baseurl }}/assets/mobilemenu.svg');
     document.getElementById('mobilenav').setAttribute('style','');
   }
 }
@@ -26,6 +26,6 @@ function togglemobilemenu() {
   <title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="/{{ site.baseurl }}//css/main.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>

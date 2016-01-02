@@ -3,6 +3,8 @@
 ---
 @charset "utf-8";
 
+$base-url: "{{ site.baseurl }}";
+
 @import
         "layout"
 ;
