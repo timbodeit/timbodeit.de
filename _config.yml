@@ -2,8 +2,8 @@ title: Tim Bodeit
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Hi, I'm Tim, a Developer from Munich, Germany
-baseurl: "/timbodeit.de"
-url: "http://timbodeit.github.io"
+baseurl: ""
+url: "https://timbodeit.de"
 twitter_username: timbodeit
 github_username:  timbodeit
 
